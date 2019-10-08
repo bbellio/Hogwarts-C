@@ -13,7 +13,10 @@
 		FBEEBC65234C3E6500A6D563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEEBC64234C3E6500A6D563 /* Assets.xcassets */; };
 		FBEEBC68234C3E6500A6D563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEEBC66234C3E6500A6D563 /* LaunchScreen.storyboard */; };
 		FBEEBC6B234C3E6500A6D563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEEBC6A234C3E6500A6D563 /* main.m */; };
+		FC0ECCAD234D2DCE00AF96F4 /* BBCharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0ECCAC234D2DCE00AF96F4 /* BBCharacterListTableViewController.swift */; };
+		FC0ECCAF234D2E9200AF96F4 /* BBCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0ECCAE234D2E9200AF96F4 /* BBCharacterTableViewCell.swift */; };
 		FC7C6C1B234CF6F5006EF059 /* BBCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7C6C1A234CF6F5006EF059 /* BBCharacter.m */; };
+		FC7C6C1F234D07D8006EF059 /* BBCharacterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7C6C1E234D07D8006EF059 /* BBCharacterController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +30,13 @@
 		FBEEBC67234C3E6500A6D563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBEEBC69234C3E6500A6D563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBEEBC6A234C3E6500A6D563 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC0ECCAB234D2DCE00AF96F4 /* Hogwarts-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hogwarts-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC0ECCAC234D2DCE00AF96F4 /* BBCharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterListTableViewController.swift; sourceTree = "<group>"; };
+		FC0ECCAE234D2E9200AF96F4 /* BBCharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCharacterTableViewCell.swift; sourceTree = "<group>"; };
 		FC7C6C19234CF6F5006EF059 /* BBCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBCharacter.h; sourceTree = "<group>"; };
 		FC7C6C1A234CF6F5006EF059 /* BBCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBCharacter.m; sourceTree = "<group>"; };
+		FC7C6C1D234D07D8006EF059 /* BBCharacterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBCharacterController.h; sourceTree = "<group>"; };
+		FC7C6C1E234D07D8006EF059 /* BBCharacterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBCharacterController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +81,6 @@
 				FC7C6C18234CF478006EF059 /* Controllers */,
 				FC7C6C17234CF473006EF059 /* Views */,
 				FBEEBC71234C3EBB00A6D563 /* Supporting Files */,
-				FBAE9AD4234C3F2300B8DAC9 /* Storyboards */,
 			);
 			path = "Hogwarts-C";
 			sourceTree = "<group>";
@@ -93,6 +100,15 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FC0ECCAA234D2DAE00AF96F4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC0ECCAC234D2DCE00AF96F4 /* BBCharacterListTableViewController.swift */,
+				FC0ECCAB234D2DCE00AF96F4 /* Hogwarts-C-Bridging-Header.h */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		FC7C6C16234CF454006EF059 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,8 @@
 		FC7C6C17234CF473006EF059 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FC0ECCAE234D2E9200AF96F4 /* BBCharacterTableViewCell.swift */,
+				FBAE9AD4234C3F2300B8DAC9 /* Storyboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,8 +130,19 @@
 		FC7C6C18234CF478006EF059 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC0ECCAA234D2DAE00AF96F4 /* View Controllers */,
+				FC7C6C1C234D07C3006EF059 /* Model Controllers */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC7C6C1C234D07C3006EF059 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC7C6C1D234D07D8006EF059 /* BBCharacterController.h */,
+				FC7C6C1E234D07D8006EF059 /* BBCharacterController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +177,7 @@
 				TargetAttributes = {
 					FBEEBC54234C3E6300A6D563 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -188,7 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBEEBC5A234C3E6300A6D563 /* AppDelegate.m in Sources */,
+				FC7C6C1F234D07D8006EF059 /* BBCharacterController.m in Sources */,
 				FC7C6C1B234CF6F5006EF059 /* BBCharacter.m in Sources */,
+				FC0ECCAD234D2DCE00AF96F4 /* BBCharacterListTableViewController.swift in Sources */,
+				FC0ECCAF234D2E9200AF96F4 /* BBCharacterTableViewCell.swift in Sources */,
 				FBEEBC6B234C3E6500A6D563 /* main.m in Sources */,
 				FBEEBC5D234C3E6300A6D563 /* SceneDelegate.m in Sources */,
 			);
@@ -330,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				INFOPLIST_FILE = "$(SRCROOT)/Hogwarts-C/Supporting Files/Info.plist";
@@ -339,6 +373,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DevMountain.Hogwarts-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hogwarts-C/Controllers/View Controllers/Hogwarts-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -347,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				INFOPLIST_FILE = "$(SRCROOT)/Hogwarts-C/Supporting Files/Info.plist";
@@ -356,6 +394,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DevMountain.Hogwarts-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hogwarts-C/Controllers/View Controllers/Hogwarts-C-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

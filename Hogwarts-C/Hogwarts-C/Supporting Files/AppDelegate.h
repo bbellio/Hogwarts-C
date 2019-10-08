@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BBCharacterController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+
 
 
 @end
