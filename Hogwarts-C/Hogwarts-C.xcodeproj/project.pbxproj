@@ -13,6 +13,7 @@
 		FBEEBC65234C3E6500A6D563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEEBC64234C3E6500A6D563 /* Assets.xcassets */; };
 		FBEEBC68234C3E6500A6D563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEEBC66234C3E6500A6D563 /* LaunchScreen.storyboard */; };
 		FBEEBC6B234C3E6500A6D563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEEBC6A234C3E6500A6D563 /* main.m */; };
+		FC7C6C1B234CF6F5006EF059 /* BBCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7C6C1A234CF6F5006EF059 /* BBCharacter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		FBEEBC67234C3E6500A6D563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBEEBC69234C3E6500A6D563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBEEBC6A234C3E6500A6D563 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC7C6C19234CF6F5006EF059 /* BBCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBCharacter.h; sourceTree = "<group>"; };
+		FC7C6C1A234CF6F5006EF059 /* BBCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBCharacter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,9 @@
 		FBEEBC57234C3E6300A6D563 /* Hogwarts-C */ = {
 			isa = PBXGroup;
 			children = (
+				FC7C6C16234CF454006EF059 /* Models */,
+				FC7C6C18234CF478006EF059 /* Controllers */,
+				FC7C6C17234CF473006EF059 /* Views */,
 				FBEEBC71234C3EBB00A6D563 /* Supporting Files */,
 				FBAE9AD4234C3F2300B8DAC9 /* Storyboards */,
 			);
@@ -85,6 +91,29 @@
 				FBEEBC6A234C3E6500A6D563 /* main.m */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC7C6C16234CF454006EF059 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC7C6C19234CF6F5006EF059 /* BBCharacter.h */,
+				FC7C6C1A234CF6F5006EF059 /* BBCharacter.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC7C6C17234CF473006EF059 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC7C6C18234CF478006EF059 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +142,7 @@
 		FBEEBC4D234C3E6300A6D563 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BB;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Karl Pfister";
 				TargetAttributes = {
@@ -158,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBEEBC5A234C3E6300A6D563 /* AppDelegate.m in Sources */,
+				FC7C6C1B234CF6F5006EF059 /* BBCharacter.m in Sources */,
 				FBEEBC6B234C3E6500A6D563 /* main.m in Sources */,
 				FBEEBC5D234C3E6300A6D563 /* SceneDelegate.m in Sources */,
 			);
